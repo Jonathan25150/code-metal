@@ -1,0 +1,23 @@
+body {
+  background: #0f0f0f;
+  color: #eaeaea;
+  font-family: system-ui, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a,
+a:link,
+a:visited {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #63081585;
+}

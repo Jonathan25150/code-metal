@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Code & Métal</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <h1 class="tittle">Code & Métal</h1>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <ul class="links">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="les-groupes.html"> Les groupes </a></li>
+          <li><a href="a-propos.html"> À propos </a></li>
+          <li><a href="contact.html"> Nous contacter</a></li>
+          </ul>
+        </nav>
+        <!--  HAMBURGER MENU -->
+           <div class="btn-burger">
+          <i class="fa-solid fa-bars"></i>
+          </div>
+        <nav class="burger-menu">
+          <ul class="links-burger">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="les-groupes.html"> Les groupes </a></li>
+            <li><a href="a-propos.html"> À propos </a></li>
+            <li><a href="contact.html"> Nous contacter</a></li>
+          </ul>
+        </nav>
+      </div>
+<div class="img-banniere"></div>
+    </header>
+    <main>
+      <h2 class="article_recent">Nous contacter </h2>
+      <form>
+        <fieldset>
+        <div>
+        <label for="inputname">Nom</label>
+        <input type="text" id="inputname" placeholder="Votre Nom" required>
+        </div>
+        <div>
+          <label for="inputprenom"> Prénom</label>
+          <input type="text" id="inputprenom" placeholder="Votre Prenom" required>
+        </div>
+      <div>
+        <label for="emailinput"> Email</label>
+        <input type="email" id="emailinput" placeholder="Votre adresse mail" required>
+      </div>
+      <div>
+        <label for="message"> Votre message</label>
+      <textarea id="message" name="message" rows="10" cols="42" placeholder="Votre message" required> </textarea>
+      </div>
+      
+<div class="checkbox-group">
+  <input type="checkbox" id="consent" required>
+  <label for="consent">J’accepte l’utilisation de mes données</label>
+</div>
+
+      <button type="submit"> Envoyer </button>
+      </form>
+        </fieldset>
+      </section>
+    </main>
+    <footer>
+      <p class="titlle_footer">
+        Code & Métal– blog dédié à la culture métal et au développement web.
+      </p>
+      <p class="copyright">&copy; 2026</p>
+    </footer>
+    <script src="script.js"></script> 
+  </body>
+</html>
