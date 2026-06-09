@@ -49,7 +49,7 @@ h1 {
   display: block;
 }
 .img-banniere {
-  background-image: url("../Images/bannière.png");
+  background-image: url("../Images/banniere.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
