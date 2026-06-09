@@ -1,0 +1,249 @@
+header {
+  background: #161616;
+  padding: 1rem;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+main {
+  padding: 2rem;
+}
+h1 {
+  font-size: 40px;
+}
+.navbar {
+  display: none;
+}
+.btn-burger {
+  font-size: 30px;
+}
+.links-burger {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}
+.burger-menu {
+  display: none;
+  background: #b11226;
+  border-radius: 10px;
+  gap: 2rem;
+  top: 100%;
+  right: 0;
+  padding: 1rem;
+  position: absolute;
+  box-shadow:
+    0 0 10px rgba(177, 18, 38, 0.8),
+    0 0 25px rgba(177, 18, 38, 0.6);
+
+  transition: 0.3s ease;
+}
+.burger-menu li {
+  font-size: 20px;
+}
+.burger-menu.open {
+  display: block;
+}
+.img-banniere {
+  background-image: url(/images/bannière.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 200px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-size: 50px;
+  margin-bottom: 4rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 3rem;
+}
+.card {
+  border: 1px solid #b11226;
+  padding: 1rem;
+  background: #161616;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 2px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+h3 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size: 20px;
+}
+h3,
+p {
+  margin: 20px;
+}
+
+.home .card:nth-child(3) {
+  display: none;
+}
+
+footer {
+  background: #161616;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b5b5b5;
+}
+fieldset div {
+  margin: 1rem;
+}
+label[for="message"] {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 1px;
+  text-align: center;
+  text-decoration: solid;
+  background-color: #b11226;
+  font-size: 30px;
+}
+ul {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0;
+}
+#message {
+  min-width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 990px) {
+  .burger-menu,
+  .btn-burger {
+    display: none;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    backdrop-filter: blur (15);
+    display: flex;
+    align-items: center;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .links a {
+    transition: 0.2s ease;
+  }
+
+  .links li {
+    background: #b11226;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 2rem;
+  }
+  label[for="message"] {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
+    width: fit-content;
+    margin: 1rem;
+  }
+  H1 {
+    font-size: 50px;
+    white-space: nowrap;
+  }
+
+  .card {
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  p {
+    font-size: 35px;
+  }
+  .image_article {
+    width: 100%;
+    height: auto;
+  }
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .card p {
+    font-size: 20px;
+    flex-grow: 1;
+    margin: 1rem;
+  }
+  .a-propos-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+  }
+  .a-propos-text p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+
+  footer p {
+    font-size: 30px;
+  }
+
+  .card:nth-child(3) {
+    display: block;
+  }
+}
+@media (min-width: 1340px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .card {
+    width: 23%;
+  }
+}
